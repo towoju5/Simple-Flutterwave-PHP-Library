@@ -5,12 +5,12 @@ namespace Flutterwave;
 class Flutterwave
 {
     var $return_url = 'site/user/verify_payment';
-    var $public_key = "FLWPUBK-c221813f280b9ed02ef261eaf30c3790-X";
-    var $secret_key = "FLWSECK_TEST-ade6347be0f68ec493bde731f10d0954-X";
+    var $public_key = "FLWPUBK-261eaf30c3790-X";    // public key
+    var $secret_key = "FLWSECK_TEST-ade60954-X";    // secret key
 
     
 
-    /** Move to your controller from here. */
+    /**You can also Move to your controller from here if you intend to use as Controller. */
 
     public function bankTransfer()
     {
@@ -127,8 +127,6 @@ class Flutterwave
         $init = $this->Flutterwave->curl_get($endpoint);
         print_r($init);
     }
-
-    /** Move to your controller to this point. */
 
     function verify_transaction($payment_id)
     {
