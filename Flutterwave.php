@@ -145,7 +145,7 @@ class Flutterwave
             'tx_ref' => 'hooli-tx-1920bbtytty', // unique transaction reference code
             'amount' => '100',
             'currency' => 'NGN',
-            'redirect_url' => 'https://webhook.site/9d0b00ba-9a69-44fa-a43d-a82c33c36fdc',
+            'redirect_url' => $this->return_url,
             'payment_options' => 'card',
             'meta' => [
               'consumer_id' => 23,
